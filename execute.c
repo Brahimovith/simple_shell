@@ -21,3 +21,18 @@ int executer(char **com,char **argv, int i)
         vidercom(com);
        
       }
+   
+   
+   }
+   else
+   {
+      waitpid(enfant,&s,0);
+      vidercom(com);
+      free(cc),cc= NULL;
+      
+      
+   
+   }
+   return (WEXITSTATUS(s));
+
+}

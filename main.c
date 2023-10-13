@@ -30,3 +30,23 @@ int main(int argc, char *argv[])
         }
         i++;
         com = token(ligne);
+        
+        if(com == NULL)
+        {
+          continue;
+        }
+        
+        if(builtinn(com[0]))
+        {
+          built(com,argv,&s,i);
+        }
+        else
+        {
+          s = executer(com, argv, i);
+        }  
+
+     
+        
+    }
+    
+}
